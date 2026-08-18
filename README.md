@@ -264,9 +264,7 @@ ExampleTab:AddParagraph("Example Paragraph", "This is an example paragraph. You 
 ExampleTab:AddLabel("Example Label")
 ```
 
-### You want to use Swift for your Project?
-Than join our discord with the link below
-https://discord.gg/swift-library
-
 # Here is a small list of our socials
 [TikTok](https://www.tiktok.com/@vapemenu.xyz)
+[YouTube](https://www.youtube.com/@officialswiftlibary)
+[Discord](https://discord.gg/swift-library)
