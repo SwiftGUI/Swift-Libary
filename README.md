@@ -9,4 +9,6 @@
 * **Custom Fonts**
 * **Custom Color**
 * **Default Themes**
-* **Colorpickers**
+* **Custom loading screen**
+
+---
