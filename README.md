@@ -1,6 +1,7 @@
 # Swift-Libary
 > Swift is a Modern and custom Roblox Library
 
+https://cdn.discordapp.com/attachments/1533507488878432416/1539309484621434880/Sigma_Banner.png?ex=6a85d92c&is=6a8487ac&hm=46e3635ea056c0e5edb5c736368c634ecbdcf6d33ce2f40abaa3d7c1654e7789&
 **You can customize everything in Swift! We place a strong emphasis on making Swift Library beginner-friendly and easy to use.**
 
 # Swift has Features like
