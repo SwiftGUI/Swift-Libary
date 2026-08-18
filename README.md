@@ -21,6 +21,7 @@
 
 ```lua
 local SwiftUi = loadstring(game:HttpGet("https://api.getvortex.vip/api/t/QUGYKH/s/OfficialSwiftLib"))()
+```
 
 ## Example
 ```lua
