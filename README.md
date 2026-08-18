@@ -265,6 +265,6 @@ ExampleTab:AddLabel("Example Label")
 ```
 
 # Here is a small list of our socials
-[TikTok](https://www.tiktok.com/@vapemenu.xyz)
-[YouTube](https://www.youtube.com/@officialswiftlibary)
+[TikTok](https://www.tiktok.com/@vapemenu.xyz), 
+[YouTube](https://www.youtube.com/@officialswiftlibary), 
 [Discord](https://discord.gg/swift-library)
