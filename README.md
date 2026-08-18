@@ -113,3 +113,149 @@ ExampleTab:AddLabel("Example Label") --Label Text
 
 ExampleTab:AddParagraph("Example Paragraph", "This is an example paragraph. You can add more text here to provide information or instructions.") --Paragraph Title and Text
 ```
+
+## How to setup the individual features
+
+### Window
+
+```lua
+local Window = SwiftUI:MakeWindow({
+    Name = "Swift UI - Main", --Example Name
+    IntroEnabled = true,
+    IntroText = "Swift Ui is Loading",
+    IntroIcon = "rbxassetid://123456",
+    SaveConfig = true,
+    ConfigFolder = "TestConfigs",
+    ConfigFileName = "Settings.json",
+    ShowLoadNotification = false,
+})
+```
+
+### Tab
+
+```lua
+local ExampleTab = Window:MakeTab({
+    Name = "Example Tab",
+    Icon = "rbxassetid://4483345998",
+})
+```
+
+### Notification
+
+```lua
+SwiftUI:MakeNotification({
+    Name = "Example Name",
+    Content = "Example Content",
+    Time = 3
+})
+```
+
+### Section
+
+```lua
+ExampleTab:AddSection({
+    Name = "Example Section"
+})
+```
+
+### Toggle
+
+```lua
+ExampleTab:AddToggle({
+    Name = "Example Toggle",
+    Default = false,
+    Callback = function(Value)
+        print("Test Toggle Value: " .. tostring(Value))
+    end
+})
+```
+
+### Slider
+
+```lua
+ExampleTab:AddSlider({
+    Name = "Example Slider",
+    Min = 0,
+    Max = 100,
+    Default = 50,
+    Increment = 1,
+    Callback = function(Value)
+        print("Test Slider Value: " .. tostring(Value))
+    end
+})
+```
+
+### Button
+
+```lua
+ExampleTab:AddButton({
+    Name = "Example Button",
+    Callback = function()
+        print("Test Button Clicked")
+    end
+})
+```
+
+### Keybind
+
+```lua
+ExampleTab:AddBind({
+    Name = "Example Keybind",
+    Default = Enum.KeyCode.LeftControl,
+    Callback = function()
+        print("Test Keybind Pressed")
+    end
+})
+```
+
+### Texbox
+
+```lua
+ExampleTab:AddTextbox({
+    Name = "Example Textbox",
+    Default = "",
+    TextDisappear = true,
+    Callback = function(Value)
+        print("Test Textbox Value: " .. Value)
+    end
+})
+```
+
+### Dropdown
+
+```lua
+ExampleTab:AddDropdown({
+    Name = "Example Dropdown",
+    Options = {"Option 1", "Option 2", "Option 3"},
+    Default = "Option 1",
+    Callback = function(Value)
+        print("Test Dropdown Value: " .. Value)
+    end
+})
+```
+
+### Colorpick
+
+```lua
+ExampleTab:AddColorpicker({
+    Name = "Example Colorpicker",
+    Default = Color3.fromRGB(255, 0, 0),
+    Callback = function(Value)
+        highlightColor = Value
+        print("Ausgewählte Farbe:", Value)
+    end
+})
+```
+
+### Paragraph
+
+```lua
+ExampleTab:AddParagraph("Example Paragraph", "This is an example paragraph. You can add more text here to provide information or instructions.")
+```
+
+### Labels
+
+```lua
+ExampleTab:AddLabel("Example Label")
+```
+
