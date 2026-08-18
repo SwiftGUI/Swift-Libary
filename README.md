@@ -12,3 +12,8 @@
 * **Custom loading screen**
 
 ---
+## How to Setup the Library
+```lua
+local SwiftUi = loadstring(game:HttpGet("https://api.getvortex.vip/api/t/QUGYKH/s/OfficialSwiftLib"))() 
+```
+---
