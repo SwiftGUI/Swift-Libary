@@ -17,3 +17,99 @@
 local SwiftUi = loadstring(game:HttpGet("https://api.getvortex.vip/api/t/QUGYKH/s/OfficialSwiftLib"))() 
 ```
 ---
+
+## Example
+```lua
+local SwiftUi = loadstring(game:HttpGet("https://api.getvortex.vip/api/t/QUGYKH/s/OfficialSwiftLib"))() 
+
+local Window = SwiftUi:MakeWindow({
+    Name = "Swift UI - Example Menu", --Example Name
+    IntroEnabled = true, -- set the intro true or false 
+    IntroText = "Swift Ui is Loading", -- intro text (if IntroEnabled = false you can delete this line)
+    IntroIcon = "rbxassetid://123456",  -- intro icon (if IntroEnabled = false you can delete this line)
+    SaveConfig = true, -- save settings if true than it saved or false than is doesnt save
+    ConfigFolder = "TestConfigs", -- Config Folder name
+    ConfigFileName = "Settings.json", -- Config File Name (in the Folder)
+    ShowLoadNotification = false, -- shows the load notification
+}) 
+
+SwiftUi:MakeNotification({
+    Name = "Example Name",
+    Content = "Example Content",
+    Time = 3 --custom time how long the notification should be shown
+})
+
+local ExampleTab = Window:MakeTab({
+    Name = "Example Tab", -- Tab Name
+    Icon = "rbxassetid://4483345998", --the icon for the Tab
+})
+
+ExampleTab:AddSection({
+    Name = "Example Section" --Section Name
+}) 
+
+ExampleTab:AddColorpicker({
+    Name = "Example Colorpicker",
+    Default = Color3.fromRGB(255, 0, 0),
+    Callback = function(Value)
+        highlightColor = Value
+        print("Ausgewählte Farbe:", Value)
+    end
+})
+
+ExampleTab:AddButton({
+    Name = "Example Button",
+    Callback = function()
+        print("Test Button Clicked")
+    end
+})
+
+ExampleTab:AddToggle({
+    Name = "ExampleToggle",
+    Default = false,
+    Callback = function(Value)
+        print("Test Toggle Value: " .. tostring(Value))
+    end
+})
+
+ExampleTab:AddSlider({
+    Name = "Example Slider",
+    Min = 0,
+    Max = 100,
+    Default = 50,
+    Increment = 1,
+    Callback = function(Value)
+        print("Test Slider Value: " .. tostring(Value))
+    end
+})
+
+ExampleTab:AddDropdown({
+    Name = "Example Dropdown",
+    Options = {"Option 1", "Option 2", "Option 3"},
+    Default = "Option 1",
+    Callback = function(Value)
+        print("Test Dropdown Value: " .. Value)
+    end
+})
+
+ExampleTab:AddTextbox({
+    Name = "Example Textbox",
+    Default = "", --if you dont write anything in it its nothing (empty)
+    TextDisappear = true, --if you click enter after you typed the word or anythinf the text disappear (only if its true)
+    Callback = function(Value)
+        print("Test Textbox Value: " .. Value)
+    end
+})
+
+ExampleTab:AddBind({
+    Name = "Example Keybind",
+    Default = Enum.KeyCode.RightShift,
+    Callback = function()
+        print("Test Keybind Pressed")
+    end
+})
+
+ExampleTab:AddLabel("Example Label") --Label Text
+
+ExampleTab:AddParagraph("Example Paragraph", "This is an example paragraph. You can add more text here to provide information or instructions.") --Paragraph Title and Text
+```
