@@ -14,7 +14,11 @@
 [~]
 ```
 
--# [+] = Added
--# [-] = Removed
--# [/] = Improved/Fixed
--# [~] = Changed/Reworked
+
+Legend:
+```
+[+] = Added
+[-] = Removed
+[/] = Improved/Fixed
+[~] = Changed/Reworked
+```
