@@ -29,9 +29,10 @@ local SwiftUi = loadstring(game:HttpGet("https://api.getvortex.vip/api/t/QUGYKH/
 
 local Window = SwiftUi:MakeWindow({
     Name = "Swift UI - Example Menu", --Example Name
+    WindowIcon = "rbxassetid://4483345998",
     IntroEnabled = true, -- set the intro true or false 
     IntroText = "Swift Ui is Loading", -- intro text (if IntroEnabled = false you can delete this line)
-    IntroIcon = "rbxassetid://123456",  -- intro icon (if IntroEnabled = false you can delete this line)
+    IntroIcon = "rbxassetid://4483345998",  -- intro icon (if IntroEnabled = false you can delete this line)
     SaveConfig = true, -- save settings if true than it saved or false than is doesnt save
     ConfigFolder = "TestConfigs", -- Config Folder name
     ConfigFileName = "Settings.json", -- Config File Name (in the Folder)
@@ -39,10 +40,13 @@ local Window = SwiftUi:MakeWindow({
 }) 
 
 SwiftUi:MakeNotification({
-    Name = "Example Name",
+    Title = "Example Name",
     Content = "Example Content",
+    Icon = "rbxassetid://4483345998" -- custom notification icon
     Time = 3 --custom time how long the notification should be shown
 })
+
+Window:TabSection("Example")
 
 local ExampleTab = Window:MakeTab({
     Name = "Example Tab", -- Tab Name
@@ -126,6 +130,7 @@ ExampleTab:AddParagraph("Example Paragraph", "This is an example paragraph. You 
 ```lua
 local Window = SwiftUI:MakeWindow({
     Name = "Swift UI - Main", --Example Name
+    WindowIcon = ""rbxassetid://4483345998",
     IntroEnabled = true,
     IntroText = "Swift Ui is Loading",
     IntroIcon = "rbxassetid://123456",
@@ -134,6 +139,12 @@ local Window = SwiftUI:MakeWindow({
     ConfigFileName = "Settings.json",
     ShowLoadNotification = false,
 })
+```
+
+### Tab Section
+
+```lua
+Window:TabSection("Example")
 ```
 
 ### Tab
@@ -149,7 +160,7 @@ local ExampleTab = Window:MakeTab({
 
 ```lua
 SwiftUI:MakeNotification({
-    Name = "Example Name",
+    Title = "Example Name",
     Content = "Example Content",
     Time = 3
 })
