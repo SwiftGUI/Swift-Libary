@@ -206,6 +206,7 @@ ExampleTab:AddSlider({
 ```lua
 ExampleTab:AddButton({
     Name = "Example Button",
+    HoldButton = true, --can also be false
     Callback = function()
         print("Test Button Clicked")
     end
@@ -242,6 +243,7 @@ ExampleTab:AddTextbox({
 ```lua
 ExampleTab:AddDropdown({
     Name = "Example Dropdown",
+    MultiSelection = true, --can also be false
     Options = {"Option 1", "Option 2", "Option 3"},
     Default = "Option 1",
     Callback = function(Value)
