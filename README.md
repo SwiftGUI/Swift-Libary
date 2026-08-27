@@ -2,7 +2,7 @@
 
 > Swift is a modern and customizable Roblox UI Library.
 
-![Swift Preview](https://chatgpt.com/backend-api/estuary/content?id=file_00000000060881f4b003d8b26cd8031b&ts=496621&p=fs&cid=1&sig=5aea350230a588ac5b0874571a757cc04e546949bb5ce4cb9ca3d46b5d747975&v=0)
+![Swift Preview](https://github.com/SwiftGUI/ui/blob/main/Sigma%20Banner.png?raw=true)
 
 **You can customize everything in Swift! We place a strong emphasis on making Swift Library beginner-friendly and easy to use.**
 
