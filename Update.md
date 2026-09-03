@@ -1,6 +1,5 @@
 # Last Update from Swift | V-1.0.7
-
-> This is a Bug Fix update
+-This is a Bug Fix update
 ```lua
 [+] Added Nothing
 
